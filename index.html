@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  <title>ETCH-A-SKETCH</title>
+</head>
+<body>
+  <header> <div class="title"><h1>ETCH-A-SKETCH</h1></div>
+    <div class="mode">Mode:Coloring</div>
+  </header>
+<main>
+<div class="btn">
+    <button onclick="changeColor('black')" id="btn1">Black</button>
+    <button onclick="changeColor('white')" id="btn2"> Eraser</button>
+    <button onclick="changeColor('random')" id="btn3">Random</button>
+    <button onclick="resetBoard()" id="btn4">Reset</button>
+  <div class="input">
+    <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)">
+    <button>Set size</button>
+  </div>
+</div>
+
+    <div class="sketch-holder">
+    <div class="board"></div>
+    </div>
+    <footer>Error: input must be between 2 and 100</footer>
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>
